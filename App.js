@@ -10,9 +10,9 @@ const App = () => {
   const ONE_SECOND_IN_MS = 1000;
 
   const PATTERN = [
+    .001 * ONE_SECOND_IN_MS,
     1 * ONE_SECOND_IN_MS,
-    2 * ONE_SECOND_IN_MS,
-    3 * ONE_SECOND_IN_MS
+    //.0001 * ONE_SECOND_IN_MS
   ];
 
   const PATTERN_DESC =
