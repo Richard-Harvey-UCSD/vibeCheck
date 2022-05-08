@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Platform, Text, Vibration, View, SafeAreaView, StyleSheet } from "react-native";
 
 const Separator = () => {
-  return <View style={Platform.OS === "android" ? styles.separator : null} />;
+  return <View style={Platform.OS === "ios" ? null : styles.separator} />;
 };
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
         <Button title="Vibrate once" onPress={() => Vibration.vibrate()} />
       </View>
       <Separator />
-      {Platform.OS == "android"
+      {Platform.OS === "android"
         ? [
           <View>
             <Button
